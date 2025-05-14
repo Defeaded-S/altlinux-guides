@@ -20,7 +20,7 @@ cd /var/www/html/altlinux
 apt-get install -y nginx
 systemctl enable -now nginx
 ```
-### Настраиваем http доступ до нашего репозитория
+### Настраиваем http доступ до репозитория
 ```
 mv ~/altlinux-guides/altlinux.conf /etc/nginx/sites-available.d/
 ln -s /etc/nginx/sites-available.d/altlinux.conf /etc/nginx/sites-enabled.d/altlinux.conf
