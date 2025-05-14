@@ -26,6 +26,10 @@ mv ~/altlinux-guides/altlinux.conf /etc/nginx/sites-available.d/
 ln -s /etc/nginx/sites-available.d/altlinux.conf /etc/nginx/sites-enabled.d/altlinux.conf
 systemctl restart nginx
 ```
+### Установка зависимостей для скрипта addpackages.sh
+```
+apt-get install /usr/bin/packages
+```
 ### Добавление пакетов в репозиторий
 ```
 cd ~/altlinux-guides
