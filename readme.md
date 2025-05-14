@@ -38,4 +38,5 @@ apt-get install -d <название пакета>
 apt-repo rm all
 apt-repo add rpm http://<IP>/altlinux x86_64 classic
 apt-repo add rpm http://<IP>/altlinux noarch classic
+apt-repo add rpm http://<IP>/altlinux i586 classic
 ```
