@@ -38,7 +38,7 @@ apt-get install /usr/bin/packages
 ```
 cd ~/altlinux-guides
 apt-get clean
-apt-get install -d <название пакета>
+apt-get install -d <пакет>
 ./addpackages.sh /var/www/html/altlinux classic /var/cache/apt/archives/
 ./meta.sh /var/www/html/altlinux classic
 ```
