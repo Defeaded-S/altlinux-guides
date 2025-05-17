@@ -11,6 +11,6 @@ cat ~/altlinux-guides/meta.sh | bash
 wait
 cp ~/altlinux-guides/altlinux.conf /etc/nginx/sites-available.d/
 ln -s /etc/nginx/sites-available.d/altlinux.conf /etc/nginx/sites-enabled.d/altlinux.conf
-systemctl enable -now nginx
+systemctl enable --now nginx
 wait
 apt-get install -y /usr/bin/packages
