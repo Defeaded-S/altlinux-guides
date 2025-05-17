@@ -3,13 +3,13 @@
 ```
 wget -O - https://raw.githubusercontent.com/Defeaded-S/altlinux-guides/main/easy-install.sh |  bash
 ```
-### Клонируем репозиторий
+### Клонируем мой репозиторий
 ```
 cd ~/
 apt-get install -y git
 git clone https://github.com/Defeaded-S/altlinux-guides.git
 ```
-### Создаем каталог репозитория:
+### Создаем каталог для локального репозитория:
 ```
 mkdir -p /var/www/html/altlinux
 ```
@@ -22,7 +22,7 @@ cd /var/www/html/altlinux
 ### Устанавливаем nginx
 ```
 apt-get install -y nginx
-systemctl enable -now nginx
+systemctl enable --now nginx
 ```
 ### Настраиваем http доступ до репозитория
 ```
@@ -45,7 +45,9 @@ apt-get install -d <название пакета>
 ### Замена репозиториев на свой
 ```
 apt-repo rm all
-apt-repo add rpm http://<IP>/altlinux x86_64 classic
-apt-repo add rpm http://<IP>/altlinux noarch classic
-apt-repo add rpm http://<IP>/altlinux i586 classic
+apt-repo add rpm http://<IP>/altlinux
+```
+### Чтобы вернуть стандартные репозитории
+```
+apt-repo set p10
 ```
