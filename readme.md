@@ -46,6 +46,7 @@ apt-get install -d <название пакета>
 ```
 apt-repo rm all
 apt-repo add rpm http://<IP>/altlinux
+apt-repo add rpm http://<IP>/altlinux x86_64-i586
 ```
 ### Чтобы вернуть стандартные репозитории
 ```
