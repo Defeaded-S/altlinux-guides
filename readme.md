@@ -33,6 +33,7 @@ apt-get install /usr/bin/packages
 ### Добавление пакетов в репозиторий
 ```
 cd ~/altlinux-guides
+apt-get clean
 apt-get install -d <название пакета>
 ./addpackages.sh /var/www/html/altlinux classic /var/cache/apt/archives/
 ./meta.sh /var/www/html/altlinux classic
