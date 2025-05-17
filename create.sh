@@ -1,7 +1,6 @@
 #!/bin/sh
+REPO_DIR="."
 REPO_NAME="classic"
-
-for arch in i586 x86_64 noarch; do
-  mkdir -p $arch/RPMS.$REPO_NAME
-  genbasedir --create --progress --topdir=. $arch $REPO_NAME
+for i in i586 i686 x86_64 noarch; do
+  mkdir -p "$REPO_DIR/$i/base" "$REPO_DIR/$i/RPMS.$REPO_NAME"
 done
