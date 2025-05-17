@@ -1,5 +1,7 @@
 #!/bin/bash
 cd ~/
+apt-get update
+wait
 apt-get install -y git apt-repo-tools nginx
 wait
 git clone https://github.com/Defeaded-S/altlinux-guides.git
