@@ -7,10 +7,7 @@ wait
 mkdir -p /var/www/html/altlinux
 mv ~/altlinux-guides/create.sh /var/www/html/altlinux/
 cd /var/www/html/altlinux
-for arch in i586 x86_64 noarch; do
-  mkdir -p $arch/RPMS.classic
-  genbasedir --create --progress --topdir=. $arch classic
-done
+cat create.sh | bash
 wait
 apt-get install -y nginx
 wait
