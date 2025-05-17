@@ -1,4 +1,8 @@
-# Создание локального репозитория Altlinux
+# Создание локального репозитория Altlinux 10.4
+### Быстрая установка
+```
+wget -O - https://raw.githubusercontent.com/Defeaded-S/altlinux-guides/main/easy-install.sh |  bash
+```
 ### Клонируем репозиторий
 ```
 cd ~/
@@ -30,7 +34,7 @@ systemctl restart nginx
 ```
 apt-get install /usr/bin/packages
 ```
-### Добавление пакетов в репозиторий
+### Добавление пакетов в репозиторий из кэша apt
 ```
 cd ~/altlinux-guides
 apt-get clean
